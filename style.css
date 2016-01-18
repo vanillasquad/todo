@@ -22,7 +22,7 @@ h1 {
 }
 
 #input-new-task {
-   width: 80%;
+   width: 88%;
    outline: none;
    border: none;
    padding: 20px;
@@ -74,7 +74,7 @@ ul {
    padding: 10px;
 }
 
-#submit-button {
+button#submit-button {
    height: 50px;
    border: none;
    animation: color-change 3s infinite linear;
