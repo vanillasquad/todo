@@ -28,13 +28,6 @@ h1 {
    padding: 20px;
 }
 
-#submit-button {
-   height: 50px;
-   border: none;
-   animation: color-change 3s infinite linear;
-   border-radius: 5px;
-   outline: none;
-}
 
 @keyframes color-change {
    0% {background-color: #E0EFFF}
@@ -79,4 +72,12 @@ h1 {
 
 ul {
    padding: 10px;
+}
+
+#submit-button {
+   height: 50px;
+   border: none;
+   animation: color-change 3s infinite linear;
+   border-radius: 5px;
+   outline: none;
 }
