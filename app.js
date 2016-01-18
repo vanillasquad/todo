@@ -1,8 +1,9 @@
-// Task-click handler
+// select task click handler
 var clickHandler = function(e) {
    this.classList.toggle('completed');
 };
 
+// add todo item when pressing return key
 document.addEventListener('keypress', function(e) {
   if (e.keyCode === 13) {
     e.preventDefault();
@@ -19,6 +20,7 @@ document.addEventListener('keypress', function(e) {
   }
 }, false);
 
+// add todo item on button click
 document.getElementById('submit-button').addEventListener('click', function (e) {
   var newTask = document.getElementById('input-new-task').value;
   if (newTask !== '') {
@@ -32,6 +34,7 @@ document.getElementById('submit-button').addEventListener('click', function (e) 
   }
 }, false);
 
+// remove
 document.getElementById('clear-completed').addEventListener('click', function(e) {
    var clearItems = document.querySelectorAll('li.completed');
    console.log(clearItems);
