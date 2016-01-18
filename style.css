@@ -1,3 +1,5 @@
+/*---text-elements----*/
+
 html {
    font-family: Lato, Helvetica;
 }
@@ -11,7 +13,7 @@ h1 {
    text-align: center;
 }
 
-/*---boxes----*/
+/*---containers----*/
 
 #app {
    max-width: 480px;
@@ -22,16 +24,29 @@ h1 {
 }
 
 #input-new-task {
-   width: 88%;
+   width: 86%;
    outline: none;
    border: none;
    padding: 20px;
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
+}
+
+#submit-button {
+   height: 52px;
+   padding: 0 15px;
+   border: none;
+   animation: color-change 3s infinite linear;
+   outline: none;
+   position: absolute;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
 }
 
 
 @keyframes color-change {
    0% {background-color: #E0EFFF}
-   50% {background-color: green}
+   50% {background-color: #8EE48E}
    100% {background: #E0EFFF}
 }
 
@@ -47,18 +62,22 @@ h1 {
 
 .task {
    list-style: none;
-   padding: 15px 0;
+   padding: 15px 25px;
    margin: 10px 0;
    border-radius: 10px;
    background-color: #F8FCFF;
 }
 
-.completed {
-   background-color: #8EE48E;
-}
-
 .task a {
    margin-left: 10px;
+}
+
+ul {
+   padding: 10px;
+}
+
+.completed {
+   background-color: #8EE48E;
 }
 
 .noselect {
@@ -68,16 +87,4 @@ h1 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-ul {
-   padding: 10px;
-}
-
-button#submit-button {
-   height: 50px;
-   border: none;
-   animation: color-change 3s infinite linear;
-   border-radius: 5px;
-   outline: none;
 }
