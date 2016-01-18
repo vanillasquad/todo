@@ -47,7 +47,7 @@ h1 {
 
 .task {
    list-style: none;
-   padding: 15px 0;
+   padding: 15px 25px;
    margin: 10px 0;
    border-radius: 10px;
    background-color: #F8FCFF;
