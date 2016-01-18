@@ -14,3 +14,26 @@ keeps it all in one place in an easy to use format.
 * Prioritise tasks with colour coding
 * Add subtasks and/or comments
 * Store tasks after app or browser is closed
+
+## Tasks
+
+###### HTML
+
+skeleton of app
+containers, etc
+
+###### CSS
+
+###### JS
+
+form submit handlers
+* get text
+* create new task element
+* append to DOM
+
+task click handlers
+* toggle CSS class
+
+task done handlers
+* look for "done" task elements
+* remove them from DOM
