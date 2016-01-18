@@ -1,3 +1,5 @@
+/*---text-elements----*/
+
 html {
    font-family: Lato, Helvetica;
 }
@@ -11,7 +13,7 @@ h1 {
    text-align: center;
 }
 
-/*---boxes----*/
+/*---containers----*/
 
 #app {
    max-width: 480px;
@@ -66,12 +68,16 @@ h1 {
    background-color: #F8FCFF;
 }
 
-.completed {
-   background-color: #8EE48E;
-}
-
 .task a {
    margin-left: 10px;
+}
+
+ul {
+   padding: 10px;
+}
+
+.completed {
+   background-color: #8EE48E;
 }
 
 .noselect {
@@ -81,8 +87,4 @@ h1 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-ul {
-   padding: 10px;
 }
