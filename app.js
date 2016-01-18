@@ -33,6 +33,9 @@ document.getElementById('submit-button').addEventListener('click', function (e) 
 }, false);
 
 document.getElementById('clear-completed').addEventListener('click', function(e) {
-   var clearItems = document.querySelectorAll('completed');
+   var clearItems = document.querySelectorAll('li.completed');
    console.log(clearItems);
+   for (var i=0; i<clearItems.length; i++) {
+      clearItems[i].remove();
+   }
 })
